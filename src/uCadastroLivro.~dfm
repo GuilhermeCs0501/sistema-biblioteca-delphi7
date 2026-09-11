@@ -1,0 +1,209 @@
+inherited frmCadastroLivro: TfrmCadastroLivro
+  Left = 658
+  Top = 131
+  Caption = 'Cadastro de Livro'
+  OldCreateOrder = True
+  PixelsPerInch = 96
+  TextHeight = 16
+  inherited lblTitulo: TLabel
+    Caption = 'Cadastro de Livro'
+  end
+  inherited pnlCampos: TPanel
+    Top = 364
+    Align = alBottom
+    object lblISBN: TLabel
+      Left = 27
+      Top = 23
+      Width = 81
+      Height = 18
+      Caption = 'C'#243'digo ISBN'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblTituloLivro: TLabel
+      Left = 240
+      Top = 23
+      Width = 35
+      Height = 18
+      Caption = 'T'#237'tulo'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblGenero: TLabel
+      Left = 27
+      Top = 94
+      Width = 47
+      Height = 18
+      Caption = 'G'#234'nero'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblAutor: TLabel
+      Left = 354
+      Top = 94
+      Width = 35
+      Height = 18
+      Caption = 'Autor'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblPaginas: TLabel
+      Left = 27
+      Top = 165
+      Width = 127
+      Height = 18
+      Caption = 'N'#250'mero de p'#225'ginas'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object edtISBN: TEdit
+      Left = 27
+      Top = 46
+      Width = 172
+      Height = 26
+      CharCase = ecUpperCase
+      Color = 3158064
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 10
+      ParentFont = False
+      TabOrder = 0
+      OnKeyPress = edtISBNKeyPress
+    end
+    object edtTitulo: TEdit
+      Left = 240
+      Top = 46
+      Width = 743
+      Height = 26
+      Color = 3158064
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 80
+      ParentFont = False
+      TabOrder = 1
+    end
+    object cmbGenero: TComboBox
+      Left = 27
+      Top = 117
+      Width = 286
+      Height = 26
+      Style = csDropDownList
+      Color = 3158064
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 18
+      ParentFont = False
+      TabOrder = 2
+      Items.Strings = (
+        'Romance'
+        'Fic'#231#227'o'
+        'Aventura'
+        'Drama')
+    end
+    object edtAutor: TEdit
+      Left = 354
+      Top = 117
+      Width = 629
+      Height = 26
+      Color = 3158064
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 60
+      ParentFont = False
+      TabOrder = 3
+    end
+    object medPaginas: TMaskEdit
+      Left = 27
+      Top = 187
+      Width = 172
+      Height = 26
+      Color = 3158064
+      Enabled = False
+      EditMask = '9999;1;_'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 4
+      ParentFont = False
+      TabOrder = 4
+      Text = '    '
+    end
+    object rgbIdioma: TRadioGroup
+      Left = 240
+      Top = 165
+      Width = 743
+      Height = 86
+      Caption = 'Idioma'
+      Color = 3158064
+      Columns = 4
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Items.Strings = (
+        'Portugu'#234's'
+        'Ingl'#234's'
+        'Espanhol'
+        'Outros')
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 5
+    end
+  end
+  inherited pnlBotoes: TPanel
+    Top = 636
+    Align = alBottom
+  end
+  inherited dbgDados: TDBGrid
+    Top = 55
+  end
+  inherited dsDados: TDataSource
+    Left = 912
+  end
+  inherited ADOConnection1: TADOConnection
+    Left = 952
+  end
+  inherited ADOQuery1: TADOQuery
+    Left = 992
+  end
+end

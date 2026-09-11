@@ -1,0 +1,145 @@
+inherited frmCadastroAluno: TfrmCadastroAluno
+  Left = 591
+  Top = 119
+  Caption = 'Cadastro de Aluno'
+  OldCreateOrder = True
+  PixelsPerInch = 96
+  TextHeight = 16
+  inherited lblTitulo: TLabel
+    Caption = 'Cadastro de Aluno'
+  end
+  inherited pnlCampos: TPanel
+    object lblRA: TLabel
+      Left = 27
+      Top = 27
+      Width = 78
+      Height = 18
+      Caption = 'RA do aluno'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblNome: TLabel
+      Left = 26
+      Top = 99
+      Width = 39
+      Height = 18
+      Caption = 'Nome'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblCurso: TLabel
+      Left = 275
+      Top = 29
+      Width = 37
+      Height = 18
+      Caption = 'Curso'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object lblEndereco: TLabel
+      Left = 25
+      Top = 173
+      Width = 60
+      Height = 18
+      Caption = 'Endere'#231'o'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object edtRA: TEdit
+      Left = 27
+      Top = 50
+      Width = 206
+      Height = 26
+      Color = 3158064
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 20
+      ParentFont = False
+      TabOrder = 0
+    end
+    object edtNome: TEdit
+      Left = 26
+      Top = 122
+      Width = 709
+      Height = 26
+      Color = 3158064
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 80
+      ParentFont = False
+      TabOrder = 1
+    end
+    object cmbCurso: TComboBox
+      Left = 275
+      Top = 51
+      Width = 480
+      Height = 26
+      Style = csDropDownList
+      Color = 3158064
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ItemHeight = 18
+      ParentFont = False
+      TabOrder = 2
+      Items.Strings = (
+        'Ci'#234'ncia da Computa'#231#227'o'
+        'Sistemas de Informa'#231#227'o'
+        'Engenharia de Software'
+        'An'#225'lise e Desenvolvimento de Sistemas'
+        'Gest'#227'o da Tecnologia da Informa'#231#227'o')
+    end
+    object edtEndereco: TEdit
+      Left = 25
+      Top = 195
+      Width = 446
+      Height = 26
+      Color = 3158064
+      Enabled = False
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -15
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      MaxLength = 120
+      ParentFont = False
+      TabOrder = 3
+    end
+  end
+  inherited dsDados: TDataSource
+    Left = 912
+  end
+  inherited ADOConnection1: TADOConnection
+    Left = 952
+  end
+  inherited ADOQuery1: TADOQuery
+    Left = 992
+  end
+end

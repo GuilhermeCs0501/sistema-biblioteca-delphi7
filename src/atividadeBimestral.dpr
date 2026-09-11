@@ -1,0 +1,19 @@
+program atividadeBimestral;
+
+uses
+  Forms,
+  uTelaInicial in 'uTelaInicial.pas' {frmMenu},
+  uCadastroBase in 'uCadastroBase.pas' {frmCadastroBase},
+  uCadastroLivro in 'uCadastroLivro.pas' {frmCadastroLivro},
+  uCadastroAluno in 'uCadastroAluno.pas' {frmCadastroAluno},
+  uBanco in 'uBanco.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  InicializarBanco;
+  Application.Title := 'Sistema de Biblioteca';
+  Application.CreateForm(TfrmMenu, frmMenu);
+  Application.Run;
+end.
